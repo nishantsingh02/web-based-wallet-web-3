@@ -1,0 +1,127 @@
+/* Base styles remain the same */
+
+/* --- Responsive Logic --- */
+
+/* Small devices (phones, <640px) */
+@media (max-width: 639px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .wallet-card {
+    padding: 20px;
+    gap: 20px;
+    border-radius: 15px;
+  }
+
+  .wallet-title {
+    font-size: 22px;
+  }
+
+  .wallet-subtitle {
+    font-size: 12px;
+  }
+
+  .mnemonic-box,
+  .word-box {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .generate-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .addresses-container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .address-card {
+    min-width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Medium devices (tablets, 640px - 1023px) */
+@media (min-width: 640px) and (max-width: 1023px) {
+  #root {
+    padding: 1.5rem;
+  }
+
+  .wallet-card {
+    padding: 25px;
+    gap: 25px;
+    border-radius: 18px;
+  }
+
+  .wallet-title {
+    font-size: 24px;
+  }
+
+  .wallet-subtitle {
+    font-size: 13px;
+  }
+
+  .mnemonic-box,
+  .word-box {
+    padding: 9px 12px;
+    font-size: 15px;
+  }
+
+  .generate-btn {
+    padding: 11px 22px;
+    font-size: 15px;
+  }
+
+  .addresses-container {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .address-card {
+    min-width: 220px;
+  }
+}
+
+/* Large devices (desktop, >=1024px) */
+@media (min-width: 1024px) {
+  #root {
+    padding: 2rem;
+  }
+
+  .wallet-card {
+    max-width: 800px;
+  }
+
+  .mnemonic-box,
+  .word-box {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .generate-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .address-card {
+    min-width: 250px;
+  }
+}
+
+/* Optional: make the mnemonic container scrollable on small screens */
+.mnemonic-container,
+.mnemonic-boxes {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Optional: hide scrollbar on mobile nicely */
+.mnemonic-container::-webkit-scrollbar,
+.mnemonic-boxes::-webkit-scrollbar {
+  display: none;
+}

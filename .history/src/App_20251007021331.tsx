@@ -25,7 +25,7 @@ function App() {
     <div className="">
       <div className="wallet-card">
         {/* Header */}
-        <h1 className="wallet-title">My Crypto Wallet</h1>
+        <h1 className="wallet-title">BlockHaven</h1>
         <p className="wallet-subtitle">
           Securely store your seed phrase and wallets
         </p>

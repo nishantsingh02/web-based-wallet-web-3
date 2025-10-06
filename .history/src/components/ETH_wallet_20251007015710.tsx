@@ -9,6 +9,7 @@ interface ETHWalletProps {
 function ETH_wallet({ mnemonic }: ETHWalletProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [addresses, setAddresses] = useState<string[]>([]);
+  const [count, setCount] = useState(0);
 
   return (
     <div>
@@ -31,7 +32,7 @@ function ETH_wallet({ mnemonic }: ETHWalletProps) {
       <div className="addresses-container">
         {addresses.map((addr, idx) => (
           <div key={idx} className="address-card">
-            <span>Account {idx + 1} - {addr}</span>
+            <span>Account  - {addr}</span>
             
           </div>
         ))}

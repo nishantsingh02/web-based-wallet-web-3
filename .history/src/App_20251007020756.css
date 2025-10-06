@@ -101,10 +101,7 @@
   transform: translateY(-2px);
 }
 
-.generate-btn:disabled {
-  background-color: #a5b4fc; /* Indigo-300 */
-  cursor: not-allowed;
-}
+
 
 .addresses-container {
   display: flex;

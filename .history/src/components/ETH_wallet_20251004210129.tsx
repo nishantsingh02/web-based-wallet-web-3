@@ -31,7 +31,7 @@ function ETH_wallet({ mnemonic }: ETHWalletProps) {
       <div className="addresses-container">
         {addresses.map((addr, idx) => (
           <div key={idx} className="address-card">
-            <span>Account {idx + 1} - {addr}</span>
+            <span>ETH - {addr}</span>
             
           </div>
         ))}

@@ -106,6 +106,27 @@
   cursor: not-allowed;
 }
 
+.app-footer {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #1c3d6b;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-top: 30px;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 639px) {
+  .app-footer {
+    font-size: 12px;
+    padding: 12px 15px;
+  }
+}
+
+
 .addresses-container {
   display: flex;
   flex-wrap: wrap;

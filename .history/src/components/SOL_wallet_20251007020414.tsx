@@ -32,7 +32,7 @@ function SOL_wallet({ mnemonic }: SOLWalletProps) {
          {/* render the public keys keys  */}
       <div className="addresses-container" >
         {publicKeys.map((p, idx) => (
-          <div key ={idx} className="address-card" >Account {idx + 1} - {p.toBase58()}</div>
+          <div key ={idx} className="address-card" >Account - {p.toBase58()}</div>
         ))}
       </div>
     </div>

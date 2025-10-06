@@ -6,6 +6,7 @@ import ETH_wallet from "./components/ETH_wallet";
 import SOL_wallet from "./components/SOL_wallet";
 
 function App() {
+
   const [mnemonic, setMnemonic] = useState(() => {
     return localStorage.getItem("mnemonic") || "";
   });
@@ -14,21 +15,22 @@ function App() {
 
   const words = mnemonic ? mnemonic.split(" ") : [];
 
-  // this function make sure that we dont genrate differnt seeds multiple time
   const handleGenrate = () => {
+    if(mnemonic) {
+      alert("Seed phrase already generated! Save it securely.");
+      return;
+    }
     const mn = generateMnemonic();
     setMnemonic(mn);
     localStorage.setItem("mnemonic", mn);
-  };
+  }
 
   return (
     <div className="">
       <div className="wallet-card">
         {/* Header */}
         <h1 className="wallet-title">My Crypto Wallet</h1>
-        <p className="wallet-subtitle">
-          Securely store your seed phrase and wallets
-        </p>
+        <p className="wallet-subtitle">Securely store your seed phrase and wallets</p>
 
         {/* Seed Phrase Section */}
         <div className="seed-section">
@@ -42,26 +44,19 @@ function App() {
           </div>
           <button
             className="generate-btn"
-            onClick={handleGenrate}
-            disabled={!!mnemonic}
+            onClick={}}
           >
-            {mnemonic ? "Seed Phrase Generated" : "Generate Seed Phrase"}
+            Generate Seed Phrase
           </button>
         </div>
 
         {/* ETH Wallet Section */}
         <ETH_wallet mnemonic={mnemonic} />
 
-        {/* SOL Wallet Section */}
-        <SOL_wallet mnemonic={mnemonic} />
-      <div className="w-full text-black text-center py-4 mt-8 rounded-t-lg">
-  <p className="text-sm sm:text-base">© 2025 My Crypto Wallet. All rights reserved.</p>
-</div>
-
+              {/* SOL Wallet Section */}
+        <SOL_wallet mnemonic= {mnemonic} />
       </div>
-
       
-
     </div>
   );
 }

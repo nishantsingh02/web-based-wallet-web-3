@@ -54,7 +54,7 @@ function App() {
 
         {/* SOL Wallet Section */}
         <SOL_wallet mnemonic={mnemonic} />
-      <div className="w-full text-black text-center py-4 mt-8 rounded-t-lg">
+      <div className="w-full bg-indigo-900 text-black text-center py-4 mt-8 rounded-t-lg">
   <p className="text-sm sm:text-base">© 2025 My Crypto Wallet. All rights reserved.</p>
 </div>
 
