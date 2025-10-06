@@ -74,7 +74,7 @@ function SOL_wallet({ mnemonic }: SOLWalletProps) {
               onClick={() => deleteWallet(idx)}
               className="bg-red-500 w-10 h-10 flex items-center justify-center text-white font-bold rounded-full cursor-pointer hover:bg-red-600 hover:scale-110 transition-all shadow-md"
             >
-              X
+              Delete
             </div>
           </div>
         ))}
