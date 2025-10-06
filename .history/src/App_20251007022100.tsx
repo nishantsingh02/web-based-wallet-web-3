@@ -56,7 +56,18 @@ function App() {
         <SOL_wallet mnemonic={mnemonic} />
       <div className="w-full  text-black text-center py-4 mt-8 rounded-t-lg">
   <p className="text-sm sm:text-base">© 2025 My Crypto Wallet. All rights reserved.</p>
-  <p className="text-xs mt-1">Designed and Developed by <a href="https://nishants.me" className="font-bold text-indigo-900 hover:text-indigo-500 hover:underline cursor-pointer transition-colors" >Nishant Singh</a></p>
+  <p className="text-xs mt-1">Designed and Developed by <a import React from 'react'
+  
+  function App() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
+  
+  export default App
+   className="font-bold text-indigo-900 hover:text-indigo-500 hover:underline cursor-pointer transition-colors" >Nishant Singh</a></p>
 </div>
 
 
